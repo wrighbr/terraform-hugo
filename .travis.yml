@@ -1,6 +1,7 @@
 language: go
 install: go get -v github.com/spf13/hugo
 script:
+  - cd myblog
   - hugo
   - python --version
   - sudo pip install s3cmd
