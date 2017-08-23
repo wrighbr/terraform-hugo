@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BTW IT Blog</title>
+    <link>http://example.org/</link>
+    <description>Recent content on BTW IT Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Mar 2017 00:46:10 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apache Guacamole</title>
+      <link>http://example.org/index.php/2017/03/09/apache-guacamole/</link>
+      <pubDate>Thu, 09 Mar 2017 00:46:10 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2017/03/09/apache-guacamole/</guid>
+      <description>https://deviantengineer.com/2015/02/guacamole-centos7/</description>
+    </item>
+    
+    <item>
+      <title>Example syntax for Secure Copy (scp)</title>
+      <link>http://example.org/index.php/2017/02/02/example-syntax-for-secure-copy-scp/</link>
+      <pubDate>Thu, 02 Feb 2017 03:48:50 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2017/02/02/example-syntax-for-secure-copy-scp/</guid>
+      <description>What is Secure Copy?
+scp allows files to be copied to, from, or between different hosts. It uses ssh for data transfer and provides the same authentication and same level of security as ssh.
+Examples
+Copy the file &amp;#8220;foobar.txt&amp;#8221; from a remote host to the local host$ scp your_username@remotehost.edu:foobar.txt /some/local/directory 
+Copy the file &amp;#8220;foobar.txt&amp;#8221; from the local host to a remote host$ scp foobar.txt your_username@remotehost.edu:/some/remote/directory 
+Copy the directory &amp;#8220;foo&amp;#8221; from the local host to a remote host&amp;#8217;s directory &amp;#8220;bar&amp;#8221;$ scp -r foo your_username@remotehost.</description>
+    </item>
+    
+    <item>
+      <title>Certbot &amp; Let’s Encrypt (Free SSL Certs)</title>
+      <link>http://example.org/index.php/2016/12/06/certbot-lets-encrypt-free-ssl-certs/</link>
+      <pubDate>Tue, 06 Dec 2016 04:47:31 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/12/06/certbot-lets-encrypt-free-ssl-certs/</guid>
+      <description>Well obtain a free SSL cert couldn&amp;#8217;t be easier with Certbot &amp;amp; Let&amp;#8217;s Encrypt
+Download Certbotwget https://dl.eff.org/certbot-auto chmod a+x certbot-auto 
+Install your free certificate with certbot ./certbot-auto 
+Creating cron job to auto renew cert very 12 hours.crontab -e * */12 * * * /path-to/certbot-auto renew &amp;ndash;quiet &amp;ndash;no-self-upgrade 
+https://certbot.eff.org/</description>
+    </item>
+    
+    <item>
+      <title>AWS Certificate Management and WordPress</title>
+      <link>http://example.org/index.php/2016/12/06/aws-certificate-management-and-wordpress/</link>
+      <pubDate>Tue, 06 Dec 2016 04:25:37 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/12/06/aws-certificate-management-and-wordpress/</guid>
+      <description>Create AWS Certificate
+ Open AWS Console. Services &amp;gt; Security &amp;gt; Certificate Manager.  Select Request Certificate Type domain name and click Review &amp;amp; Request Review the domain and Confirm and Request. An email will be sent to the webmaster/hostmaster/admin Once you have received to the email click on the link within the email to approve the request.  Binding the Certificate to an EC2 Instance / Elastic Load Balancer (ELB)</description>
+    </item>
+    
+    <item>
+      <title>Extending Hard Drive  RedHat 7</title>
+      <link>http://example.org/index.php/2016/09/26/extending-hard-drive-redhat-7/</link>
+      <pubDate>Mon, 26 Sep 2016 05:19:53 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/09/26/extending-hard-drive-redhat-7/</guid>
+      <description>Check current disk# fdisk -l Disk /dev/sda: 41.9 GB, 41943040000 bytes, 81920000 sectors Units = sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disk label type: dos Disk identifier: 0x000d1957 Device Boot Start End Blocks Id System /dev/sda1 * 2048 1026047 512000 83 Linux /dev/sda2 1026048 81919999 40446976 8e Linux LVM 
+Extend Virtual disk</description>
+    </item>
+    
+    <item>
+      <title>Creating a Chocolately / Choco package</title>
+      <link>http://example.org/index.php/2016/08/23/creating-a-chocolately-choco-package/</link>
+      <pubDate>Tue, 23 Aug 2016 05:15:23 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/23/creating-a-chocolately-choco-package/</guid>
+      <description>Open PowerShell or Command Prompt as an Administrator
+Create a directory called Choco-Repo and change into that directory
+mkdir c:\Choco-Repo cd C:\Choco-Repo  Create a new package
+choco new &#39;My-App&#39;  Open c:\choco-repo\My-App\My-App.nuspec with your favourite text editor (notepad++) and modify the file to look the below.
+&amp;lt;package xmlns=&#34;http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd&#34; &amp;lt;metadata &amp;lt;idMy-App&amp;lt;/id  My-App (Install)  &amp;lt;version7.1.1&amp;lt;/version &amp;lt;authorsMy Software Company&amp;lt;/authors &amp;lt;ownersMy Software Company&amp;lt;/owners &amp;lt;summaryMy Application&amp;lt;/summary &amp;lt;descriptionThis is my App. There are many like it, but this one is mine.</description>
+    </item>
+    
+    <item>
+      <title>Exchange get the mailbox size of all mailboxes.</title>
+      <link>http://example.org/index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/</link>
+      <pubDate>Mon, 22 Aug 2016 04:47:01 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/</guid>
+      <description>To obtain the mailbox size of all mailboxes ran the below command within Exchange Management Shell
+Get-Mailbox -Database Database | Get-MailboxStatistics | Format-Table DisplayName, TotalItemSize  </description>
+    </item>
+    
+    <item>
+      <title>SQL Reporting Services and Certificates</title>
+      <link>http://example.org/index.php/2016/08/17/sql-reporting-server-and-certificates/</link>
+      <pubDate>Wed, 17 Aug 2016 07:28:45 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/17/sql-reporting-server-and-certificates/</guid>
+      <description>Error Message
+`Error Message
+`
+Resolution
+Open Reporting Services Cofiguration Manager
+Remove certificate from the SQL Report Services
+open command prompt as an administrator and type the below command
+netsh http show sslcert
+This will show that there is a cert is still bound to port 443.
+Ran the below command and this will remove the binding
+netsh http delete sslcert ipport=1.1.1.1:443
+After this you will be able bind the cert to the reporting services</description>
+    </item>
+    
+    <item>
+      <title>Creating DNS Entries</title>
+      <link>http://example.org/index.php/2016/08/17/creating-dns-entries/</link>
+      <pubDate>Wed, 17 Aug 2016 03:05:29 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/17/creating-dns-entries/</guid>
+      <description>Create a single DNS entry
+Add-DNSServerResourceRecordA -ZoneName &#39;domain.local&#39; -Name test -IPv4Address 192.168.0.20  Create multiple DNS entries
+Import-CSV c:\temp\newHosts.csv | %{ Add-DNSServerResourceRecordA -ZoneName &#39;domain.local&#39; -Name $_.&#34;HostName&#34; -IPv4Address $_.&#34;IPAddress&#34; }  </description>
+    </item>
+    
+  </channel>
+</rss>

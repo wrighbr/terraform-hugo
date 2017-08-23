@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on BTW IT Blog</title>
+    <link>http://example.org/tags/powershell/</link>
+    <description>Recent content in Powershell on BTW IT Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Aug 2016 05:15:23 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a Chocolately / Choco package</title>
+      <link>http://example.org/index.php/2016/08/23/creating-a-chocolately-choco-package/</link>
+      <pubDate>Tue, 23 Aug 2016 05:15:23 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/23/creating-a-chocolately-choco-package/</guid>
+      <description>Open PowerShell or Command Prompt as an Administrator
+Create a directory called Choco-Repo and change into that directory
+mkdir c:\Choco-Repo cd C:\Choco-Repo  Create a new package
+choco new &#39;My-App&#39;  Open c:\choco-repo\My-App\My-App.nuspec with your favourite text editor (notepad++) and modify the file to look the below.
+&amp;lt;package xmlns=&#34;http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd&#34; &amp;lt;metadata &amp;lt;idMy-App&amp;lt;/id  My-App (Install)  &amp;lt;version7.1.1&amp;lt;/version &amp;lt;authorsMy Software Company&amp;lt;/authors &amp;lt;ownersMy Software Company&amp;lt;/owners &amp;lt;summaryMy Application&amp;lt;/summary &amp;lt;descriptionThis is my App. There are many like it, but this one is mine.</description>
+    </item>
+    
+    <item>
+      <title>Exchange get the mailbox size of all mailboxes.</title>
+      <link>http://example.org/index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/</link>
+      <pubDate>Mon, 22 Aug 2016 04:47:01 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/</guid>
+      <description>To obtain the mailbox size of all mailboxes ran the below command within Exchange Management Shell
+Get-Mailbox -Database Database | Get-MailboxStatistics | Format-Table DisplayName, TotalItemSize  </description>
+    </item>
+    
+    <item>
+      <title>Creating DNS Entries</title>
+      <link>http://example.org/index.php/2016/08/17/creating-dns-entries/</link>
+      <pubDate>Wed, 17 Aug 2016 03:05:29 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/08/17/creating-dns-entries/</guid>
+      <description>Create a single DNS entry
+Add-DNSServerResourceRecordA -ZoneName &#39;domain.local&#39; -Name test -IPv4Address 192.168.0.20  Create multiple DNS entries
+Import-CSV c:\temp\newHosts.csv | %{ Add-DNSServerResourceRecordA -ZoneName &#39;domain.local&#39; -Name $_.&#34;HostName&#34; -IPv4Address $_.&#34;IPAddress&#34; }  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificates on BTW IT Blog</title>
+    <link>http://example.org/categories/certificates/</link>
+    <description>Recent content in Certificates on BTW IT Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Dec 2016 04:47:31 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/certificates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Certbot &amp; Let’s Encrypt (Free SSL Certs)</title>
+      <link>http://example.org/index.php/2016/12/06/certbot-lets-encrypt-free-ssl-certs/</link>
+      <pubDate>Tue, 06 Dec 2016 04:47:31 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/12/06/certbot-lets-encrypt-free-ssl-certs/</guid>
+      <description>Well obtain a free SSL cert couldn&amp;#8217;t be easier with Certbot &amp;amp; Let&amp;#8217;s Encrypt
+Download Certbotwget https://dl.eff.org/certbot-auto chmod a+x certbot-auto 
+Install your free certificate with certbot ./certbot-auto 
+Creating cron job to auto renew cert very 12 hours.crontab -e * */12 * * * /path-to/certbot-auto renew &amp;ndash;quiet &amp;ndash;no-self-upgrade 
+https://certbot.eff.org/</description>
+    </item>
+    
+    <item>
+      <title>AWS Certificate Management and WordPress</title>
+      <link>http://example.org/index.php/2016/12/06/aws-certificate-management-and-wordpress/</link>
+      <pubDate>Tue, 06 Dec 2016 04:25:37 +0000</pubDate>
+      
+      <guid>http://example.org/index.php/2016/12/06/aws-certificate-management-and-wordpress/</guid>
+      <description>Create AWS Certificate
+ Open AWS Console. Services &amp;gt; Security &amp;gt; Certificate Manager.  Select Request Certificate Type domain name and click Review &amp;amp; Request Review the domain and Confirm and Request. An email will be sent to the webmaster/hostmaster/admin Once you have received to the email click on the link within the email to approve the request.  Binding the Certificate to an EC2 Instance / Elastic Load Balancer (ELB)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Elb &middot;  BTW IT Blog" />
+  	<meta property="og:site_name" content="BTW IT Blog" />
+  	<meta property="og:url" content="http://example.org/tags/elb/" />
+    
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     Elb &middot;  BTW IT Blog
+  </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://example.org/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="http://example.org/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="BTW IT Blog" />
+      
+      
+        <link href="http://example.org/tags/elb/index.xml" rel="alternate" type="application/rss+xml" title="Elb &middot; BTW IT Blog" />
+      
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+
+    <link rel="canonical" href="http://example.org/tags/elb/" />
+
+    
+<div id="particles-js"></div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://example.org/js/particles.js"></script>   
+</head>
+<body class="nav-closed">
+
+  
+
+
+ <div class="site-wrapper">
+
+
+
+
+	<header class="main-header tag-head no-cover">
+
+    <nav class="main-nav overlay clearfix">
+      
+      
+        
+          <a class="menu-button icon-feed" href="http://example.org/tags/elb/index.xml">&nbsp;&nbsp;Subscribe</a>
+        
+      
+    </nav>
+    <div class="vertical">
+
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+
+              <a class="btn-bootstrap-2" href="#content">BTW IT Blog</a>
+          </h1>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+    
+
+	<div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/12/06/aws-certificate-management-and-wordpress/">AWS Certificate Management and WordPress</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p><strong>Create AWS Certificate</strong></p>
+
+<ol>
+<li>Open AWS Console.</li>
+<li>Services &gt; Security &gt; Certificate Manager.<img class="alignnone wp-image-35 size-full" src="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager.jpg" alt="CertManager" width="1212" height="545" srcset="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager.jpg 1212w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-300x135.jpg 300w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-768x345.jpg 768w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-1024x460.jpg 1024w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-1200x540.jpg 1200w" sizes="(max-width: 1212px) 100vw, 1212px" /></li>
+<li> Select Request Certificate</li>
+<li>Type domain name and click Review &amp; Request</li>
+<li>Review the domain and Confirm and Request.</li>
+<li>An email will be sent to the webmaster/hostmaster/admin</li>
+<li>Once you have received to the email click on the link within the email to approve the request.</li>
+</ol>
+
+<p><strong>Binding the Certificate to an EC2 Instance / Elastic Load Balancer (ELB)</strong></p>
+
+<ol>
+<li>Open AWS Console</li>
+<li>Services &gt; Compute &gt; EC2</li>
+<li>On the side menu select Load Balancesrs under LOAD BALANCING</li>
+<li>Select Create Load Balancer</li>
+<li>Select Classic load balance &gt; Click Continue.</li>
+<li>Type WordPress as the name of the Load Balance</li>
+<li>Click Add and choose HTTPS (Secure HTTP) as the protocol (Leave Instance port as 80). Click Next: Assign Scurity Groups</li>
+<li>Select Create a new security group. Name security group and allow port 80 and 443 from Anywhere 0.0.0.0/0. Click Next.</li>
+<li>Choose an <strong>existing</strong> certificate from AWS Certificate Manager (ACM).</li>
+<li>From the drop menu select the certificate you created early. Click Next.</li>
+<li>Select from the drop down menu TCP. Click Next.</li>
+<li>Select the EC2 Instances that you want to be in the ELB. Click Next.</li>
+<li>Click Review and Create.</li>
+<li>Click Create.</li>
+</ol>
+
+<p><strong>Enabling HTTPS within WordPress</strong></p>
+
+<ol>
+<li>Log into WordPress</li>
+<li>Navigate to Plugins &gt; Add New</li>
+<li>Search for WordPress HTTPS</li>
+<li>Install and active plugin</li>
+</ol>
+
+<p><strong>Testing SSL Certificate</strong></p>
+
+<p>Head to <a href="https://www.ssllabs.com/ssltest">https://www.ssllabs.com/ssltest</a> and enter the domain name and test the SSL Certificate.</p>
+
+<p><img class="alignnone size-full wp-image-41" src="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore.jpg" alt="CertScore" width="991" height="374" srcset="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore.jpg 991w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore-300x113.jpg 300w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore-768x290.jpg 768w" sizes="(max-width: 991px) 100vw, 991px" /></p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/aws/">#aws</a>,
+            
+                <a href="http://example.org/tags/certificate/">#certificate</a>,
+            
+                <a href="http://example.org/tags/ec2/">#ec2</a>,
+            
+                <a href="http://example.org/tags/elb/">#elb</a>,
+            
+        
+        <time class="post-date" datetime="2016-12-06T04:25:37Z">
+            6 Dec 2016
+        </time>
+    </footer>
+</article>
+
+	
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">BTW IT Blog</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://example.org/js/jquery.js"></script>
+    <script type="text/javascript" src="http://example.org/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://example.org/js/index.js"></script>
+
+</body>
+</html>
+

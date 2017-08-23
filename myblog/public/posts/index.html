@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Posts &middot;  BTW IT Blog" />
+  	<meta property="og:site_name" content="BTW IT Blog" />
+  	<meta property="og:url" content="http://example.org/posts/" />
+    
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     Posts &middot;  BTW IT Blog
+  </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://example.org/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="http://example.org/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="BTW IT Blog" />
+      
+      
+        <link href="http://example.org/posts/index.xml" rel="alternate" type="application/rss+xml" title="Posts &middot; BTW IT Blog" />
+      
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+
+    <link rel="canonical" href="http://example.org/posts/" />
+
+    
+<div id="particles-js"></div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://example.org/js/particles.js"></script>   
+</head>
+<body class="nav-closed">
+
+  
+
+
+ <div class="site-wrapper">
+
+
+
+
+	<header class="main-header tag-head no-cover">
+
+    <nav class="main-nav overlay clearfix">
+      
+      
+        
+          <a class="menu-button icon-feed" href="http://example.org/posts/index.xml">&nbsp;&nbsp;Subscribe</a>
+        
+      
+    </nav>
+    <div class="vertical">
+
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+
+              <a class="btn-bootstrap-2" href="#content">BTW IT Blog</a>
+          </h1>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+    
+
+	<div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2017/03/09/apache-guacamole/">Apache Guacamole</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p><a href="https://deviantengineer.com/2015/02/guacamole-centos7/">https://deviantengineer.com/2015/02/guacamole-centos7/</a></p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        
+        <time class="post-date" datetime="2017-03-09T00:46:10Z">
+            9 Mar 2017
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2017/02/02/example-syntax-for-secure-copy-scp/">Example syntax for Secure Copy (scp)</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>What is Secure Copy?</p>
+
+<p>scp allows files to be copied to, from, or between different hosts. It uses ssh for data transfer and provides the same authentication and same level of security as ssh.</p>
+
+<p>Examples</p>
+
+<p>Copy the file &#8220;foobar.txt&#8221; from a remote host to the local host<pre lang=linux> $ scp your_username@remotehost.edu:foobar.txt /some/local/directory </pre></p>
+
+<p>Copy the file &#8220;foobar.txt&#8221; from the local host to a remote host<pre lang=linux> $ scp foobar.txt your_username@remotehost.edu:/some/remote/directory </pre></p>
+
+<p>Copy the directory &#8220;foo&#8221; from the local host to a remote host&#8217;s directory &#8220;bar&#8221;<pre lang=linux> $ scp -r foo your_username@remotehost.edu:/some/remote/directory/bar </pre></p>
+
+<p>Copy the file &#8220;foobar.txt&#8221; from remote host &#8220;rh1.edu&#8221; to remote host &#8220;rh2.edu&#8221;<pre lang=linux> $ scp your_username@rh1.edu:/some/remote/directory/foobar.txt \ </pre></p>
+
+<p>your_username@rh2.edu:/some/remote/directory/</p>
+
+<p>Copying the files &#8220;foo.txt&#8221; and &#8220;bar.txt&#8221; from the local host to your home directory on the remote host<pre lang=linux> $ scp foo.txt bar.txt your_username@remotehost.edu:~ </pre></p>
+
+<p>Copy the file &#8220;foobar.txt&#8221; from the local host to a remote host using port 2264<pre lang=linux> $ scp -P 2264 foobar.txt your_username@remotehost.edu:/some/remote/directory </pre></p>
+
+<p>Copy multiple files from the remote host to your current directory on the local host<pre lang=linux> $ scp your_username@remotehost.edu:/some/remote/directory/{a,b,c} . $ scp your_username@remotehost.edu:~/{foo.txt,bar.txt} . </pre></p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        
+        <time class="post-date" datetime="2017-02-02T03:48:50Z">
+            2 Feb 2017
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/12/06/certbot-lets-encrypt-free-ssl-certs/">Certbot &amp; Let’s Encrypt (Free SSL Certs)</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>Well obtain a free SSL cert couldn&#8217;t be easier with Certbot &amp; Let&#8217;s Encrypt</p>
+
+<p>Download Certbot<pre lang=linux> wget <a href="https://dl.eff.org/certbot-auto">https://dl.eff.org/certbot-auto</a> chmod a+x certbot-auto </pre></p>
+
+<p>Install your free certificate with certbot <pre lang=linux> ./certbot-auto </pre></p>
+
+<p>Creating cron job to auto renew cert very 12 hours.<pre lang=linux> crontab -e * */12 * * * /path-to/certbot-auto renew &ndash;quiet &ndash;no-self-upgrade </pre></p>
+
+<p><a href="https://certbot.eff.org/">https://certbot.eff.org/</a></p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        
+        <time class="post-date" datetime="2016-12-06T04:47:31Z">
+            6 Dec 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/12/06/aws-certificate-management-and-wordpress/">AWS Certificate Management and WordPress</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p><strong>Create AWS Certificate</strong></p>
+
+<ol>
+<li>Open AWS Console.</li>
+<li>Services &gt; Security &gt; Certificate Manager.<img class="alignnone wp-image-35 size-full" src="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager.jpg" alt="CertManager" width="1212" height="545" srcset="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager.jpg 1212w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-300x135.jpg 300w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-768x345.jpg 768w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-1024x460.jpg 1024w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertManager-1200x540.jpg 1200w" sizes="(max-width: 1212px) 100vw, 1212px" /></li>
+<li> Select Request Certificate</li>
+<li>Type domain name and click Review &amp; Request</li>
+<li>Review the domain and Confirm and Request.</li>
+<li>An email will be sent to the webmaster/hostmaster/admin</li>
+<li>Once you have received to the email click on the link within the email to approve the request.</li>
+</ol>
+
+<p><strong>Binding the Certificate to an EC2 Instance / Elastic Load Balancer (ELB)</strong></p>
+
+<ol>
+<li>Open AWS Console</li>
+<li>Services &gt; Compute &gt; EC2</li>
+<li>On the side menu select Load Balancesrs under LOAD BALANCING</li>
+<li>Select Create Load Balancer</li>
+<li>Select Classic load balance &gt; Click Continue.</li>
+<li>Type WordPress as the name of the Load Balance</li>
+<li>Click Add and choose HTTPS (Secure HTTP) as the protocol (Leave Instance port as 80). Click Next: Assign Scurity Groups</li>
+<li>Select Create a new security group. Name security group and allow port 80 and 443 from Anywhere 0.0.0.0/0. Click Next.</li>
+<li>Choose an <strong>existing</strong> certificate from AWS Certificate Manager (ACM).</li>
+<li>From the drop menu select the certificate you created early. Click Next.</li>
+<li>Select from the drop down menu TCP. Click Next.</li>
+<li>Select the EC2 Instances that you want to be in the ELB. Click Next.</li>
+<li>Click Review and Create.</li>
+<li>Click Create.</li>
+</ol>
+
+<p><strong>Enabling HTTPS within WordPress</strong></p>
+
+<ol>
+<li>Log into WordPress</li>
+<li>Navigate to Plugins &gt; Add New</li>
+<li>Search for WordPress HTTPS</li>
+<li>Install and active plugin</li>
+</ol>
+
+<p><strong>Testing SSL Certificate</strong></p>
+
+<p>Head to <a href="https://www.ssllabs.com/ssltest">https://www.ssllabs.com/ssltest</a> and enter the domain name and test the SSL Certificate.</p>
+
+<p><img class="alignnone size-full wp-image-41" src="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore.jpg" alt="CertScore" width="991" height="374" srcset="https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore.jpg 991w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore-300x113.jpg 300w, https://myblog.btwsolutions.net/wp-content/uploads/2016/08/CertScore-768x290.jpg 768w" sizes="(max-width: 991px) 100vw, 991px" /></p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/aws/">#aws</a>,
+            
+                <a href="http://example.org/tags/certificate/">#certificate</a>,
+            
+                <a href="http://example.org/tags/ec2/">#ec2</a>,
+            
+                <a href="http://example.org/tags/elb/">#elb</a>,
+            
+        
+        <time class="post-date" datetime="2016-12-06T04:25:37Z">
+            6 Dec 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/09/26/extending-hard-drive-redhat-7/">Extending Hard Drive  RedHat 7</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p><strong>Check current disk</strong><pre lang=linux> # fdisk -l Disk /dev/sda: 41.9 GB, 41943040000 bytes, 81920000 sectors Units = sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disk label type: dos Disk identifier: 0x000d1957 Device Boot Start End Blocks Id System /dev/sda1 * 2048 1026047 512000 83 Linux /dev/sda2 1026048 81919999 40446976 8e Linux LVM </pre></p>
+
+<p><strong>Extend Virtual disk</strong></p>
+
+<p>Please see vendor for instrustions on how to do this.</p>
+
+<p><strong>Partitioning the unallocated space: if you&#8217;ve increased the disk size</strong></p>
+
+<p>Once you have extend the disk you will need to scan the device</p>
+
+<p>Frist check the name(s) of your scsi devices.<pre lang=linux> ls /sys/class/scsi_device/ 0:0:0:0 2:0:0:0 </pre></p>
+
+<p>Then rescan the scsi bus. Below you can replace the &#8216;0:0:0:0&#8217; with the actual scsi bus name found with the previous command<pre lang=linux> echo 1 &gt; /sys/class/scsi_device/0:0:0:0/device/rescan </pre></p>
+
+<p><strong>Partitioning the unalloced space: if you&#8217;ve added a new disk</strong></p>
+
+<p>If you&#8217;ve added a new disk on the server, the actions are similar to those described above. But instead of rescanning an already existing scsi bus like show earlier, you have to rescan the host to detect the new scsi bus as you&#8217;ve added a new disk.<pre lang=linux> $ ls /sys/class/scsi_host/ host0 </pre></p>
+
+<p>Your host device is called &#8216;host0&#8217;<pre lang=linux> $ echo &ldquo;- - -&rdquo; &gt; /sys/class/scsi_host/host0/scan </pre></p>
+
+<p><strong>Create a new partition</strong></p>
+
+<p>Once the rescan is done. You can check if the extra space can be seen on the disk.<pre lang=linux> # fdisk -l Disk /dev/sda: 53.7 GB, 53687091200 bytes, 104857600 sectors Units = sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disk label type: dos Disk identifier: 0x000d1957 Device Boot Start End Blocks Id System /dev/sda1 * 2048 1026047 512000 83 Linux /dev/sda2 1026048 81919999 40446976 8e Linux LVM </pre></p>
+
+<p>The server can now see the extra 10GB. Let&#8217;s create a partition<pre lang=linux> ~$ fdisk /dev/sda The number of cylinders for this disk is set to 1305. There is nothing wrong with that, but this is larger than 1024, and could in certain setups cause problems with: 1) software that runs at boot time (e.g., old versions of LILO) 2) booting and partitioning software from other OSs (e.g., DOS FDISK, OS/2 FDISK) Command (m for help): n </pre></p>
+
+<p>Now enter &#8216;n&#8217;, to create a new partition.<pre lang=linux> Command action e extended p primary partition (1-4) p </pre></p>
+
+<p>Now choose &#8220;p&#8221; to create a new primary partition<pre lang=linux> Partition number (3,4, default 3): 3 First sector (81920000-104857599, default 81920000): Hit Enter Using default value 81920000 Last sector, +sectors or +size{K,M,G} (81920000-104857599, default 104857599): Hit Enter Using default value 104857599 Partition 3 of type Linux and of size 11 GiB is set </pre></p>
+
+<p>Now type <strong>t</strong> to change the partition type to Linux LVM<pre lang=linux> Command (m for help): t Partition number (1-4): 3 Hex code (type L to list codes): 8e Changed system type of partition 3 to 8e (Linux LVM) </pre></p>
+
+<p>Type <strong>w</strong> to write your partitions to disk.<pre lang=linux> Command (m for help): w </pre></p>
+
+<p>Run the following to scan for the newly created partition.<pre lang=linux> partprobe -s </pre></p>
+
+<p>You can see the newly created partition with fdisk.<pre lang=linux> [root@localhost wrightb]# fdisk -l Disk /dev/sda: 53.7 GB, 53687091200 bytes, 104857600 sectors Units = sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes Disk label type: dos Disk identifier: 0x000d1957 Device Boot Start End Blocks Id System /dev/sda1 * 2048 1026047 512000 83 Linux /dev/sda2 1026048 81919999 40446976 8e Linux LVM /dev/sda3 81920000 104857599 11468800 8e Linux LVM Disk /dev/mapper/rhel-root: 39.2 GB, 39220936704 bytes, 76603392 sectors </pre></p>
+
+<p><strong>Extend the Logical Volime with the new partion</strong></p>
+
+<p>Create the physical volume for your LVM<pre lang=linux> # pvcreate /dev/sda3 Physical volume &ldquo;/dev/sda3&rdquo; successfully created </pre></p>
+
+<p>Find out what your Volume Group is called.<pre lang=linux> # vgdisplay -&ndash; Volume group -&ndash; VG Name rhel </pre></p>
+
+<p>Extend that Volume Group by adding the physical volume.<pre lang=linux> # vgextend rhel /dev/sda3 Volume group &ldquo;rhel&rdquo; successfully extended </pre></p>
+
+<p>With pvscan we can see our newly added physical volume<pre lang=linux> pvscan PV /dev/sda2 VG rhel lvm2 [38.57 GiB / 44.00 MiB free] PV /dev/sda3 VG rhel lvm2 [10.93 GiB / 10.93 GiB free] Total: 2 [49.50 GiB] / in use: 2 [49.50 GiB] / in no VG: 0 [0 ] </pre></p>
+
+<p>Now we can extend Logical Volume<pre lang=linux> # lvextend /dev/mapper/rhel-root /dev/sda3 Size of logical volume rhel/root changed from 36.53 GiB (9351 extents) to 47.46 GiB (12150 extents). Logical volume root successfully resized. </pre></p>
+
+<p>To resize the file system.<pre lang=linux> resize2fs /dev/mapper/rhel-root </pre></p>
+
+<p>If you get the below error message you are using XFS FilesSystem<pre lang=linux> resize2fs /dev/mapper/rhel-root resize2fs 1.42.9 (28-Dec-2013) resize2fs: Bad magic number in super-block while trying to open /dev/mapper/rhel-root Couldn&rsquo;t find valid filesystem superblock. </pre></p>
+
+<p>If you are using XFS Filesystem usage the below command to grow the file system.<pre lang=linux> # xfs_growfs /dev/mapper/rhel-root meta-data=/dev/mapper/rhel-root isize=256 agcount=4, agsize=2393856 blks = sectsz=512 attr=2, projid32bit=1 = crc=0 finobt=0 data = bsize=4096 blocks=9575424, imaxpct=25 = sunit=0 swidth=0 blks naming =version 2 bsize=4096 ascii-ci=0 ftype=0 log =internal bsize=4096 blocks=4675, version=2 = sectsz=512 sunit=0 blks, lazy-count=1 realtime =none extsz=4096 blocks=0, rtextents=0 data blocks changed from 9575424 to 12441600 </pre></p>
+
+<p>Finished!!</p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/linux/">#Linux</a>,
+            
+                <a href="http://example.org/tags/red-hat/">#Red Hat</a>,
+            
+                <a href="http://example.org/tags/rhel/">#rhel</a>,
+            
+                <a href="http://example.org/tags/ubuntu/">#Ubuntu</a>,
+            
+        
+        <time class="post-date" datetime="2016-09-26T05:19:53Z">
+            26 Sep 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/23/creating-a-chocolately-choco-package/">Creating a Chocolately / Choco package</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>Open PowerShell or Command Prompt as an Administrator</p>
+
+<p>Create a directory called Choco-Repo and change into that directory</p>
+
+<pre lang="dos">mkdir c:\Choco-Repo
+cd C:\Choco-Repo
+</pre>
+
+<p>Create a new package</p>
+
+<pre lang="dos">choco new 'My-App'
+</pre>
+
+<p>Open c:\choco-repo\My-App\My-App.nuspec with your favourite text editor (notepad++) and modify the file to look the below.</p>
+
+<pre lang="xml"><?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+&lt;package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  &lt;metadata>
+    
+
+<!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    &lt;id>My-App&lt;/id>
+    
+
+<title>
+  My-App (Install)
+</title>
+    &lt;version>7.1.1&lt;/version>
+    &lt;authors>My Software Company&lt;/authors>
+    &lt;owners>My Software Company&lt;/owners>
+    &lt;summary>My Application&lt;/summary>
+    &lt;description>This is my App. There are many like it, but this one is mine. My App is my best friend. It is my life. I must master it as I must master my life. My App, without me, is useless. Without my App, I am useless.
+    &lt;/description>
+    &lt;projectUrl>http://www.myapp.com&lt;/projectUrl>
+    &lt;tags>my-app admin&lt;/tags>
+    &lt;copyright>&lt;/copyright>
+    &lt;licenseUrl>http://www.myapp.com&lt;/licenseUrl>
+    &lt;requireLicenseAcceptance>false&lt;/requireLicenseAcceptance>
+    
+
+<!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    &lt;releaseNotes>&lt;/releaseNotes>
+  &lt;/metadata>
+  &lt;files>
+    &lt;file src="tools\**" target="tools" />
+  &lt;/files>
+&lt;/package>
+</pre>
+
+<p>Open c:\choco-repo\My-App\tools\chocolateyinstall.ps1</p>
+
+<p>Edit PowerShell script to look something like the below.</p>
+
+<pre lang="powershell">$ErrorActionPreference = 'Stop';
+
+$packageName = 'My-App'
+$installerType = 'MSI'
+$url = 'http://files.myapp.com/myapp.msi'
+$silentArgs = '/qn'
+$validExitCodes = @(0, 3010) 
+
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
+</pre>
+
+<p>Change into the My-App directory and create the nuget/chocolate package</p>
+
+<pre lang="dos">cd My-App
+choco pack .\My-App.nuspec
+</pre>
+
+<p>Testing that your nuget / choco works</p>
+
+<pre lang="powershell">choco install My-App -source .\My-App.nupkg
+</pre>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/choco/">#Choco</a>,
+            
+                <a href="http://example.org/tags/chocolately/">#Chocolately</a>,
+            
+                <a href="http://example.org/tags/devops/">#DevOps</a>,
+            
+                <a href="http://example.org/tags/powershell/">#PowerShell</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-23T05:15:23Z">
+            23 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/">Exchange get the mailbox size of all mailboxes.</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>To obtain the mailbox size of all mailboxes ran the below command within Exchange Management Shell</p>
+
+<pre lang="powershell">Get-Mailbox -Database Database | Get-MailboxStatistics | Format-Table DisplayName, TotalItemSize
+</pre>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/exchange/">#Exchange</a>,
+            
+                <a href="http://example.org/tags/powershell/">#PowerShell</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-22T04:47:01Z">
+            22 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/17/sql-reporting-server-and-certificates/">SQL Reporting Services and Certificates</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p><strong>Error Message</strong></p>
+
+<p>`<strong>Error Message</strong></p>
+
+<p>`</p>
+
+<p><strong>Resolution</strong></p>
+
+<p>Open Reporting Services Cofiguration Manager</p>
+
+<p>Remove certificate from the SQL Report Services</p>
+
+<p>open command prompt as an administrator and type the below command</p>
+
+<p><code>netsh http show sslcert</code></p>
+
+<p>This will show that there is a cert is still bound to port 443.</p>
+
+<p>Ran the below command and this will remove the binding</p>
+
+<p><code>netsh http delete sslcert ipport=1.1.1.1:443</code></p>
+
+<p>After this you will be able bind the cert to the reporting services</p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/certificate/">#certificate</a>,
+            
+                <a href="http://example.org/tags/reporting-service/">#reporting service</a>,
+            
+                <a href="http://example.org/tags/sql/">#sql</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-17T07:28:45Z">
+            17 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/17/creating-dns-entries/">Creating DNS Entries</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>Create a single DNS entry</p>
+
+<pre lang="powershell">Add-DNSServerResourceRecordA -ZoneName 'domain.local' -Name test -IPv4Address 192.168.0.20
+</pre>
+
+<p>Create multiple DNS entries</p>
+
+<pre lang="powershell">Import-CSV c:\temp\newHosts.csv | %{
+ Add-DNSServerResourceRecordA -ZoneName 'domain.local' -Name $_."HostName" -IPv4Address $_."IPAddress"
+ }
+</pre>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/dns/">#DNS</a>,
+            
+                <a href="http://example.org/tags/powershell/">#PowerShell</a>,
+            
+                <a href="http://example.org/tags/windows/">#Windows</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-17T03:05:29Z">
+            17 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">BTW IT Blog</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://example.org/js/jquery.js"></script>
+    <script type="text/javascript" src="http://example.org/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://example.org/js/index.js"></script>
+
+</body>
+</html>
+

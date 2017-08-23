@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Powershell &middot;  BTW IT Blog" />
+  	<meta property="og:site_name" content="BTW IT Blog" />
+  	<meta property="og:url" content="http://example.org/tags/powershell/" />
+    
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     Powershell &middot;  BTW IT Blog
+  </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://example.org/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="http://example.org/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="BTW IT Blog" />
+      
+      
+        <link href="http://example.org/tags/powershell/index.xml" rel="alternate" type="application/rss+xml" title="Powershell &middot; BTW IT Blog" />
+      
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+
+    <link rel="canonical" href="http://example.org/tags/powershell/" />
+
+    
+<div id="particles-js"></div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://example.org/js/particles.js"></script>   
+</head>
+<body class="nav-closed">
+
+  
+
+
+ <div class="site-wrapper">
+
+
+
+
+	<header class="main-header tag-head no-cover">
+
+    <nav class="main-nav overlay clearfix">
+      
+      
+        
+          <a class="menu-button icon-feed" href="http://example.org/tags/powershell/index.xml">&nbsp;&nbsp;Subscribe</a>
+        
+      
+    </nav>
+    <div class="vertical">
+
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+
+              <a class="btn-bootstrap-2" href="#content">BTW IT Blog</a>
+          </h1>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+    
+
+	<div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/23/creating-a-chocolately-choco-package/">Creating a Chocolately / Choco package</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>Open PowerShell or Command Prompt as an Administrator</p>
+
+<p>Create a directory called Choco-Repo and change into that directory</p>
+
+<pre lang="dos">mkdir c:\Choco-Repo
+cd C:\Choco-Repo
+</pre>
+
+<p>Create a new package</p>
+
+<pre lang="dos">choco new 'My-App'
+</pre>
+
+<p>Open c:\choco-repo\My-App\My-App.nuspec with your favourite text editor (notepad++) and modify the file to look the below.</p>
+
+<pre lang="xml"><?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+&lt;package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  &lt;metadata>
+    
+
+<!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    &lt;id>My-App&lt;/id>
+    
+
+<title>
+  My-App (Install)
+</title>
+    &lt;version>7.1.1&lt;/version>
+    &lt;authors>My Software Company&lt;/authors>
+    &lt;owners>My Software Company&lt;/owners>
+    &lt;summary>My Application&lt;/summary>
+    &lt;description>This is my App. There are many like it, but this one is mine. My App is my best friend. It is my life. I must master it as I must master my life. My App, without me, is useless. Without my App, I am useless.
+    &lt;/description>
+    &lt;projectUrl>http://www.myapp.com&lt;/projectUrl>
+    &lt;tags>my-app admin&lt;/tags>
+    &lt;copyright>&lt;/copyright>
+    &lt;licenseUrl>http://www.myapp.com&lt;/licenseUrl>
+    &lt;requireLicenseAcceptance>false&lt;/requireLicenseAcceptance>
+    
+
+<!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    &lt;releaseNotes>&lt;/releaseNotes>
+  &lt;/metadata>
+  &lt;files>
+    &lt;file src="tools\**" target="tools" />
+  &lt;/files>
+&lt;/package>
+</pre>
+
+<p>Open c:\choco-repo\My-App\tools\chocolateyinstall.ps1</p>
+
+<p>Edit PowerShell script to look something like the below.</p>
+
+<pre lang="powershell">$ErrorActionPreference = 'Stop';
+
+$packageName = 'My-App'
+$installerType = 'MSI'
+$url = 'http://files.myapp.com/myapp.msi'
+$silentArgs = '/qn'
+$validExitCodes = @(0, 3010) 
+
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
+</pre>
+
+<p>Change into the My-App directory and create the nuget/chocolate package</p>
+
+<pre lang="dos">cd My-App
+choco pack .\My-App.nuspec
+</pre>
+
+<p>Testing that your nuget / choco works</p>
+
+<pre lang="powershell">choco install My-App -source .\My-App.nupkg
+</pre>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/choco/">#Choco</a>,
+            
+                <a href="http://example.org/tags/chocolately/">#Chocolately</a>,
+            
+                <a href="http://example.org/tags/devops/">#DevOps</a>,
+            
+                <a href="http://example.org/tags/powershell/">#PowerShell</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-23T05:15:23Z">
+            23 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/">Exchange get the mailbox size of all mailboxes.</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>To obtain the mailbox size of all mailboxes ran the below command within Exchange Management Shell</p>
+
+<pre lang="powershell">Get-Mailbox -Database Database | Get-MailboxStatistics | Format-Table DisplayName, TotalItemSize
+</pre>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/exchange/">#Exchange</a>,
+            
+                <a href="http://example.org/tags/powershell/">#PowerShell</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-22T04:47:01Z">
+            22 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post posts">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/index.php/2016/08/17/creating-dns-entries/">Creating DNS Entries</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>Create a single DNS entry</p>
+
+<pre lang="powershell">Add-DNSServerResourceRecordA -ZoneName 'domain.local' -Name test -IPv4Address 192.168.0.20
+</pre>
+
+<p>Create multiple DNS entries</p>
+
+<pre lang="powershell">Import-CSV c:\temp\newHosts.csv | %{
+ Add-DNSServerResourceRecordA -ZoneName 'domain.local' -Name $_."HostName" -IPv4Address $_."IPAddress"
+ }
+</pre>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        on
+            
+                <a href="http://example.org/tags/dns/">#DNS</a>,
+            
+                <a href="http://example.org/tags/powershell/">#PowerShell</a>,
+            
+                <a href="http://example.org/tags/windows/">#Windows</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-17T03:05:29Z">
+            17 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">BTW IT Blog</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://example.org/js/jquery.js"></script>
+    <script type="text/javascript" src="http://example.org/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://example.org/js/index.js"></script>
+
+</body>
+</html>
+
