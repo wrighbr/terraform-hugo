@@ -9,9 +9,3 @@ resource "aws_s3_bucket" "blog" {
         index_document  = "index.html"
     }
 }
-
-resource "aws_s3_bucket_object" "blog_content" {
-    bucket  = "${var.bucket}"
-    key     =
-    content = "${var.bucket_content}"
-}
