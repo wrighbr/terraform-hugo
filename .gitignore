@@ -1,5 +1,5 @@
 provider.tf
 terraform.tfstate.backup
 terraform.tfstate
-.terraform/*
-myblog/public/*
+.terraform/
+myblog/public/
