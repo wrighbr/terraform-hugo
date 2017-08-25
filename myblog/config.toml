@@ -2,7 +2,7 @@ baseURL = "http://myblog.btwsolutions.net"
 languageCode = "en-us"
 title = "BTW IT Blog"
 description = "By The Way did you know I.T."
-theme = "hyde"
+theme = "hyde-x"
 
 
 [params]
@@ -11,6 +11,6 @@ linkedin = "https://www.linkedin.com/in/brett-wright-9384b23a/"
 
 author = "Brett Wright"
 
-searchEngineURL = "https://www.google.com/search"
-defaultDescription = "By The Way did you know I.T."
+#searchEngineURL = "https://www.google.com/search"
+#defaultDescription = "By The Way did you know I.T."
 
