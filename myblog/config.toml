@@ -1,4 +1,4 @@
-baseURL = "http://myblog.btwsolutions.net"
+baseURL = "http://myblog.btwsolutions.net/"
 languageCode = "en-us"
 title = "BTW IT Blog"
 description = "By The Way did you know I.T."
