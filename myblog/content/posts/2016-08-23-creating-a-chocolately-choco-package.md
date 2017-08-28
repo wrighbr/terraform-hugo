@@ -6,11 +6,9 @@ date: 2016-08-23T05:15:23+00:00
 url: /index.php/2016/08/23/creating-a-chocolately-choco-package/
 categories:
   - PowerShell
-tags:
   - Choco
   - Chocolately
   - DevOps
-  - PowerShell
 
 ---
 Open PowerShell or Command Prompt as an Administrator

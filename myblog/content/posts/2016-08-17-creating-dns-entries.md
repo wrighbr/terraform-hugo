@@ -6,8 +6,6 @@ date: 2016-08-17T03:05:29+00:00
 url: /creating-dns-entries/
 
 categories:
-  - PowerShell
-tags:
   - DNS
   - PowerShell
   - Windows

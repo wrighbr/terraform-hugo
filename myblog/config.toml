@@ -5,12 +5,19 @@ description = "By The Way did you know I.T."
 theme = "hyde-x"
 
 
+
+
 [params]
 github = "https://github.com/wrighbr" 
 linkedin = "https://www.linkedin.com/in/brett-wright-9384b23a/"
+rss = true
 
 author = "Brett Wright"
 
-#searchEngineURL = "https://www.google.com/search"
-#defaultDescription = "By The Way did you know I.T."
+defaultDescription = "By The Way did you know I.T."
+tagline = "By The Way did you know I.T."
+gravatarHash = "cfdb41439b5f0fa79404416c65ef453a"
+gravatar = "wright.brett@gmail.com"
+avatar = "images/avatar.jpeg"
 
+Home = "BTW IT Blog"

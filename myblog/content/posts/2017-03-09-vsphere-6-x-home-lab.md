@@ -6,7 +6,7 @@ date: 2017-03-09T04:32:21+00:00
 draft: true
 url: /?p=148
 categories:
-  - Uncategorised
+  - VMWare
 
 ---
 <blockquote data-secret="9RRSOVvGOn" class="wp-embedded-content">

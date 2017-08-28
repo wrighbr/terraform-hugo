@@ -4,9 +4,10 @@ author: Brett Wright
 type: post
 date: 2017-08-24
 
-tags:
+categories:
   - Openssl
   - Certificate
+
 ---
 
 Export the private key file from the pfx file

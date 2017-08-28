@@ -7,9 +7,6 @@ url: /aws-certificate-management-and-wordpress/
 categories:
   - AWS
   - Certificates
-tags:
-  - aws
-  - certificate
   - ec2
   - elb
 

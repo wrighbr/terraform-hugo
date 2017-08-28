@@ -7,9 +7,6 @@ url: /index.php/2016/08/22/exchange-get-the-mailbox-size-of-all-mailboxes/
 categories:
   - Exchange
   - PowerShell
-tags:
-  - Exchange
-  - PowerShell
 
 ---
 To obtain the mailbox size of all mailboxes ran the below command within Exchange Management Shell

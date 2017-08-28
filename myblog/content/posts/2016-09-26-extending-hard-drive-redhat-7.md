@@ -6,8 +6,6 @@ date: 2016-09-26T05:19:53+00:00
 url: /index.php/2016/09/26/extending-hard-drive-redhat-7/
 categories:
   - Linux
-tags:
-  - Linux
   - Red Hat
   - rhel
   - Ubuntu
