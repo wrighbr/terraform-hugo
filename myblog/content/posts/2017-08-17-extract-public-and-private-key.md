@@ -34,3 +34,8 @@ Testing for tls encryption protocol
 ```
 openssl s_client -connect google.com.au:443 -tls1_2
 ```
+
+Make a pfx file from a public and private keys
+```
+openssl pkcs12 -export -out domain.name.pfx -inkey key.pem -in cert.pem
+```
