@@ -12,17 +12,12 @@ categories:
 
 Export the private key file from the pfx file
 ```
-openssl pkcs12 -in filename.pfx -nocerts -out key.pem
+openssl pkcs12 -in filename.pfx -nocerts -out key.pem -nodes
 ```
 
 Export the certificate file from the pfx file
 ```
-openssl pkcs12 -in filename.pfx -clcerts -nokeys -out cert.pem
-```
-
-Remove the passphrase from the private key
-```
-openssl rsa -in key.pem -out server.key
+openssl pkcs12 -in filename.pfx -nokeys -out cert.pem
 ```
 
 Show public certificates
@@ -38,4 +33,10 @@ openssl s_client -connect google.com.au:443 -tls1_2
 Make a pfx file from a public and private keys
 ```
 openssl pkcs12 -export -out domain.name.pfx -inkey key.pem -in cert.pem
+```
+
+Compare certificate and key to see if they match
+```
+openssl x509 -noout -modulus -in server.crt | openssl md5
+openssl rsa -noout -modulus -in server.key | openssl md5
 ```
