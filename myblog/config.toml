@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "BTW IT Blog"
 description = "By The Way did you know I.T."
 MetaDataFormat = "toml"
-theme = "hyde-x"
+theme = "hyde-octopress"
 paginate = 10
 
 [author]
