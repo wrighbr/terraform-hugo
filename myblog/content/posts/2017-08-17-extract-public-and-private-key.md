@@ -14,6 +14,10 @@ Export the private key file from the pfx file
 ```
 openssl pkcs12 -in filename.pfx -nocerts -out key.pem -nodes
 ```
+Remove a private key password
+```
+openssl rsa -in key.pem out key2.pem
+```
 
 Export the certificate file from the pfx file
 ```
