@@ -1,5 +1,5 @@
 language: go
-install: go get -v github.com/spf13/hugo
+install: go get -v github.com/gohugoio/hugo
 script:
   - cd myblog
   - hugo version
