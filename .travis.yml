@@ -1,6 +1,12 @@
 language: go
-install: go get -v github.com/gohugoio/hugo
+#install: go get -v github.com/gohugoio/hugo
 script:
+  - mkdir $HOME/src
+  - cd $HOME/src
+  - git clone https://github.com/gohugoio/hugo.git
+  - cd hugo
+  - go install
+  - cd
   - cd myblog
   - hugo version
   - hugo -t hugo-octopress
