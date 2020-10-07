@@ -1,9 +1,9 @@
 ---
 title: SQL Reporting Services and Certificates
 author: Brett
-type: post
-date: 2016-08-17T07:28:45+00:00
-url: /sql-reporting-server-and-certificates/
+# type: post
+# date: 2016-08-17T07:28:45+00:00
+# url: /sql-reporting-server-and-certificates/
 categories:
   - SQL
   - certificate

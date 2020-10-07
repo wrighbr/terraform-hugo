@@ -1,10 +1,10 @@
 ---
 title: vsphere 6 x home lab
 author: Brett
-type: post
-date: 2017-03-09T04:32:21+00:00
-draft: true
-url: /?p=148
+# type: post
+# date: 2017-03-09T04:32:21+00:00
+# draft: true
+# url: /?p=148
 categories:
   - VMWare
 

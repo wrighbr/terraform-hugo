@@ -3,16 +3,16 @@ languageCode = "en-us"
 title = "BTW IT Blog"
 description = "By The Way did you know I.T."
 MetaDataFormat = "toml"
-theme = "hugo-octopress"
-paginate = 10
+theme = "beautifulhugo"
+#paginate = 10
 
-[author]
-    name = "Brett Wright"
+#[author]
+#    name = "Brett Wright"
 
-[params]
-    googleAnalytics = "UA-82636455-1"
-    gravatarHash = "cfdb41439b5f0fa79404416c65ef453a"
-    tagline = "By The Way did you know I.T."
-    github = "https://github.com/wrighbr" 
-    linkedin = "https://www.linkedin.com/in/brett-wright-9384b23a/"
-    rss = true
+#[params]
+#    googleAnalytics = "UA-82636455-1"
+#    gravatarHash = "cfdb41439b5f0fa79404416c65ef453a"
+#    tagline = "By The Way did you know I.T."
+#    github = "https://github.com/wrighbr" 
+#    linkedin = "https://www.linkedin.com/in/brett-wright-9384b23a/"
+#    rss = true

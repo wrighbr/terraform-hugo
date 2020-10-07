@@ -1,9 +1,9 @@
 ---
 title: Creating a Chocolately / Choco package
 author: Brett
-type: post
-date: 2016-08-23T05:15:23+00:00
-url: /index.php/2016/08/23/creating-a-chocolately-choco-package/
+# type: post
+# date: 2016-08-23T05:15:23+00:00
+# url: /index.php/2016/08/23/creating-a-chocolately-choco-package/
 categories:
   - PowerShell
   - Choco

@@ -1,9 +1,9 @@
 ---
 title: 'Certbot & Let’s Encrypt (Free SSL Certs)'
 author: Brett
-type: post
-date: 2016-12-06T04:47:31+00:00
-url: /certbot-lets-encrypt-free-ssl-certs/
+# type: post
+# date: 2016-12-06T04:47:31+00:00
+# url: /certbot-lets-encrypt-free-ssl-certs/
 categories:
   - Certificates
   - Linux

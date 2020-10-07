@@ -1,9 +1,9 @@
 ---
 title: AWS Certificate Management and WordPress
 author: Brett
-type: post
-date: 2016-12-06T04:25:37+00:00
-url: /aws-certificate-management-and-wordpress/
+# type: post
+# date: 2016-12-06T04:25:37+00:00
+# url: /aws-certificate-management-and-wordpress/
 categories:
   - AWS
   - Certificates

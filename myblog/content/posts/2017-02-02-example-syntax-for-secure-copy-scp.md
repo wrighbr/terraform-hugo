@@ -1,9 +1,9 @@
 ---
 title: Example syntax for Secure Copy (scp)
 author: Brett
-type: post
-date: 2017-02-02T03:48:50+00:00
-url: /example-syntax-for-secure-copy-scp/
+# type: post
+# date: 2017-02-02T03:48:50+00:00
+# url: /example-syntax-for-secure-copy-scp/
 categories:
   - Linux
 
